@@ -23,6 +23,15 @@ public class SystemMain01 {
 	public static void main(String[] args) {
 		//TODO ここから実装する
 
+		Member member = new Member();
+		Member member2 = new Member();
+
+		member.setData("Miura　Manabu", 24, 1);
+		member2.setData("Sato　Kenshuke", 36, 2);
+
+		member.showMember();
+		member2.showMember();
+
 	}
 
 }
