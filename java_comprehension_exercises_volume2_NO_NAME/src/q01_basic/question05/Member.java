@@ -14,8 +14,9 @@ public class Member extends AbstMember {
 	 * @param age
 	 * @param rank
 	 */
-	public Member(int id, String password, int age, int rank) {
+	public Member(int id, String name, String password, int age, int rank) {
 		this.id = id;
+		this.name = name;
 		this.password = password;
 		this.age = age;
 		this.rank = rank;
@@ -27,6 +28,14 @@ public class Member extends AbstMember {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getPassword() {
@@ -54,13 +63,14 @@ public class Member extends AbstMember {
 	}
 
 	private int id;
+	private String name;
 	private String password;
 	private int age;
 	private int rank;
 
 	@Override
 	public void buyItem() {
-		System.out.println(name + "purchased the item at a fixed price");
+		System.out.println(name + "　purchased the item at 50% off");
 	}
 
 	@Override
@@ -70,6 +80,7 @@ public class Member extends AbstMember {
 		System.out.println("password:" + password);
 		System.out.println("age:" + age);
 		System.out.println("rank:" + rank);
+		System.out.println("******************");
 	}
 
 }

@@ -18,7 +18,9 @@ public class NonMember extends AbstMember {
 
 	@Override
 	public void showMember() {
+		System.out.println("***MEMBER　DATA***");
 		System.out.println(name + "is a non-member");
+		System.out.println("+*****************");
 	}
 
 }

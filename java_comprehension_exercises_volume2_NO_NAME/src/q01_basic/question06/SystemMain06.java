@@ -1,8 +1,10 @@
 package q01_basic.question06;
 
+import java.io.IOException;
+
 public class SystemMain06 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		ConsoleReader cr = new ConsoleReader();
 		int inputId = 0;
@@ -14,6 +16,24 @@ public class SystemMain06 {
 		System.out.println("---CREATE MEMBER DATA---");
 		//TODO ここから実装する
 
+		try {
+			System.out.print("input　id>>");
+			inputId = cr.inputNumber();
+			System.out.print("input password>>");
+			inputPassword = cr.inputString();
+		} catch (IOException e) {
+			System.out.println("error");
+			e.printStackTrace();
+			return;
+		} catch (NumberFormatException e) {
+			System.out.println("error");
+			e.printStackTrace();
+			return;
+		}
+
+		Member member = new Member(inputId, inputPassword, "Miura　Manabu", 28, 2);
+
+		member.showMember();
 	}
 
 }

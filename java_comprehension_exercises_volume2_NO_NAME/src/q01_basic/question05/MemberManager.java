@@ -6,8 +6,8 @@ public class MemberManager {
 
 	}
 
-	public static void showAllMembers(Member[] members) {
-		for (Member i : members) {
+	public static void showAllMembers(AbstMember[] members) {
+		for (AbstMember i : members) {
 
 			i.showMember();
 		}
