@@ -9,5 +9,13 @@ class MemberManager {
 	}
 
 	//TODO showAllMembersメソッドを実装する
+	public static void showAllMembers(Member[] members) {
+		Member[] member = new Member[2];
+
+		for (Member mem : members) {
+
+			mem.showMember();
+		}
+	}
 
 }
