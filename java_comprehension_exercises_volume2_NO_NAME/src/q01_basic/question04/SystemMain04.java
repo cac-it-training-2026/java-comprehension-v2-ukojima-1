@@ -13,7 +13,7 @@ public class SystemMain04 {
 		members[1] = member2;
 
 		MemberManager.showAllMembers(members);
-
+		//
 	}
 
 }

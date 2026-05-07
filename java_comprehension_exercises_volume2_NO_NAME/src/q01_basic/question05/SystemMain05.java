@@ -15,7 +15,7 @@ public class SystemMain05 {
 		System.out.println("---BUY　ITEM---");
 		nonMember.buyItem();
 		member.buyItem();
-
+		//
 	}
 
 }

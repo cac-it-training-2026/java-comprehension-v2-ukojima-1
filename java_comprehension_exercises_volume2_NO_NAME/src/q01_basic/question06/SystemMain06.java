@@ -34,6 +34,7 @@ public class SystemMain06 {
 		Member member = new Member(inputId, inputPassword, "Miura　Manabu", 28, 2);
 
 		member.showMember();
+		//
 	}
 
 }

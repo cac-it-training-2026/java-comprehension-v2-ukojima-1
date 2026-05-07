@@ -9,7 +9,7 @@ public class SystemMain03 {
 		member.setName("Miura Manabu");
 		member.setAge(28);
 		member.setRank(2);
-
+		//
 		member.showMember();
 
 	}

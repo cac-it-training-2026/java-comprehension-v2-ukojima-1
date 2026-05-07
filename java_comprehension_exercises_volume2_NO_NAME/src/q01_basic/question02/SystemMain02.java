@@ -11,6 +11,7 @@ public class SystemMain02 {
 
 		member.showMember();
 		member.rankUp();
+		//
 
 	}
 }
