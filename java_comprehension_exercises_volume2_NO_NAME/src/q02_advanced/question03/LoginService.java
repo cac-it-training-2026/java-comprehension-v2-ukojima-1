@@ -1,14 +1,23 @@
 package q02_advanced.question03;
 
-/**
- * MemberStorageにアクセスし、ログイン処理を行う
- */
-class LoginService {
+import java.util.List;
 
-	/**
-	 * memberStorage Memberクラスのリスト一覧
-	 */
-	private MemberStorage memberStorage;
+public class LoginService {
 
-	//TODO ここから処理を記述
+	private List<Member> members;
+
+	public LoginService(MemberStorage storage) {
+		this.members = storage.getMembers();
+	}
+
+	public Member doLogin(int id, String password) {
+
+		for (Member m : members) {
+			if (m.getId() == id && m.getPassword().equals(password)) {
+				return m;
+			}
+		}
+
+		return null;
+	}
 }

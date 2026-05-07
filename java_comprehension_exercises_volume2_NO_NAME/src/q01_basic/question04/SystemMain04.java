@@ -12,7 +12,7 @@ public class SystemMain04 {
 		members[0] = member;
 		members[1] = member2;
 
-		MemberManager.showAllMember(members);
+		MemberManager.showAllMembers(members);
 
 	}
 

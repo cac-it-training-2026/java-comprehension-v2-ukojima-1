@@ -2,6 +2,12 @@ package q01_basic.question05;
 
 public class Member extends AbstMember {
 
+	private int id;
+	private String name;
+	private String password;
+	private int age;
+	private int rank;
+
 	/**
 	 * 
 	 */
@@ -14,7 +20,7 @@ public class Member extends AbstMember {
 	 * @param age
 	 * @param rank
 	 */
-	public Member(int id, String name, String password, int age, int rank) {
+	public Member(int id, String password, String name, int age, int rank) {
 		this.id = id;
 		this.name = name;
 		this.password = password;
@@ -42,7 +48,7 @@ public class Member extends AbstMember {
 		return password;
 	}
 
-	public void setPasswordString(String password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 
@@ -61,12 +67,6 @@ public class Member extends AbstMember {
 	public void setRank(int rank) {
 		this.rank = rank;
 	}
-
-	private int id;
-	private String name;
-	private String password;
-	private int age;
-	private int rank;
 
 	@Override
 	public void buyItem() {
